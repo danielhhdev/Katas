@@ -14,20 +14,24 @@ patrón (5):
 public class Kata1 {
     public static void main(String[] args) {
 
+        System.out.println(pattern(1));
+
     }
 
     public static String pattern (int n){
-
-        int variable =0;
         String cadena ="";
         if (n<1){
             return cadena;
-        }else{
-            for (int i = 1; i <=n ; i++) {
-
-                variable++;
-            }
         }
+        if (n==1){
+            return "1";
+        }
+        cadena+="1";
+        for (int i = 2; i <=n ; i++) {
+            String variable = String.valueOf(i);
+            cadena +="\n"+variable.repeat(i);
+        }
+
         return cadena;
     }
 
