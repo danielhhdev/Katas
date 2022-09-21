@@ -12,11 +12,6 @@ patrón (5):
     55555
  */
 public class Kata1 {
-    public static void main(String[] args) {
-
-        System.out.println(pattern(1));
-
-    }
 
     public static String pattern (int n){
         String cadena ="";
