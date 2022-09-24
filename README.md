@@ -9,4 +9,4 @@ Kata 2 --> frizzbuzz (cambiar numeros multiplos por palabras).
 
 Kata 3 --> Función que devuelve el texto de los me gusta, estilo Facebook.
 
-Kata 4 -->
+Kata 4 --> Anagrama
