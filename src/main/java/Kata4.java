@@ -8,15 +8,18 @@ Escribe una función que reciba dos palabras (String) y retorne verdadero o fals
 
 public class Kata4 {
 
+    public static void main(String[] args) {
+        System.out.println(isAnagrama("roma", "aMor"));
+    }
+
     public static Boolean isAnagrama (String word1, String word2){
 
-        StringBuilder newWord= new StringBuilder("");
-        word2.toLowerCase();
-        for (int i=word2.length();i>=0;i--){
-            newWord.append(word2.charAt(i));
+        String newWord ="";
+        for (int i=word2.length()-1;i>=0;i--){
+            newWord+=word2.charAt(i);
         }
 
-        if (word1.toLowerCase().equals(newWord)){
+        if (word1.equalsIgnoreCase(newWord)){
             return true;
         }else {
             return false;
