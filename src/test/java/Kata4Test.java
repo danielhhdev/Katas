@@ -8,9 +8,6 @@ public class Kata4Test {
         assertEquals(false,Kata4.isAnagrama("hola","alho"));
         assertEquals(true,Kata4.isAnagrama("pela","AlEp"));
 
-
-
-
     }
 
 }
