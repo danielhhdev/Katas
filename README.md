@@ -14,3 +14,5 @@ Kata 4 --> Anagrama (función que comprueba si dos palabras son anagramas)
 Kata 5 --> Función que devuelve los primos 50 numeros de la serie Fibonacci
 
 Kata 6 --> Función para saber si un núemro es primo
+
+Kata 7 --> Función que invierte el orden de una cadena de texto

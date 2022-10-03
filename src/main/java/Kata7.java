@@ -11,6 +11,7 @@ public class Kata7 {
         for (int i=s.length()-1;i>=0;i--){
             cadenaNueva+=s.charAt(i);
         }
+        
         return cadenaNueva;
 
     }
