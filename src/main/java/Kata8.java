@@ -13,10 +13,11 @@ import java.util.Map;
 public class Kata8 {
     public static void main(String[] args) {
 
+        codificarAMorse("hola");
     }
 
 
-    public static void codificarAMorse (String s){
+    public static String codificarAMorse (String s){
 
         String palabra = s.toUpperCase();
         Map <String, String> mapa = new HashMap<String, String>();
@@ -30,11 +31,19 @@ public class Kata8 {
         mapa.put("5","....."); mapa.put("6","-...."); mapa.put("7","--.."); mapa.put("8","---.."); mapa.put("9","----.");
         mapa.put(".",".-.-.-"); mapa.put(",","--..--"); mapa.put("?","..--.."); mapa.put("/","-..-.");
 
+        String palabraMorse="";
+        for (int i = 0; i < palabra.length(); i++) {
+            char c = palabra.charAt(i);
 
-        for(int i = 0;i<palabra.length();i++){
-            
+            for (Map.Entry<String, String> entry : mapa.entrySet()) {
+                if (entry.getKey().equalsIgnoreCase(String.valueOf(c))) {
+                    palabraMorse+= entry.getValue() + " ";
+                }
+            }
+
+
         }
-
+        return palabraMorse;
 
     }
 
