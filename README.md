@@ -16,3 +16,5 @@ Kata 5 --> Función que devuelve los primos 50 numeros de la serie Fibonacci
 Kata 6 --> Función para saber si un núemro es primo
 
 Kata 7 --> Función que invierte el orden de una cadena de texto
+
+Kata 8 --> Función para transformar texto natural a código Morse
